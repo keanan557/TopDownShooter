@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Top Down Shooter Engine</title>
+    <style>
+      canvas {
+        border: 1px solid black;
+        background-image: url('assets/background.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      /* Style for mobile controls */
+      .controls {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        display: none; /* Hide by default */
+      }
+
+      .button {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        font-size: 20px;
+        padding: 15px;
+        margin: 5px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        opacity: 0.8;
+      }
+
+      .button:active {
+        opacity: 1;
+      }
+
+      /* Styling for buttons */
+      #shootButton {
+        background-color: red;
+        width: 80px;
+        height: 80px;
+        font-size: 16px;
+      }
+
+      #moveUpButton {
+        background-color: blue;
+      }
+
+      #moveDownButton {
+        background-color: blue;
+      }
+
+      #moveLeftButton {
+        background-color: blue;
+      }
+
+      #moveRightButton {
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>wasd - move</h1>
+    <h2>Space - shoot</h2>
+    <canvas></canvas>
+
+    <!-- Mobile Controls -->
+    <div class="controls">
+      <button id="moveUpButton" class="button">↑</button>
+      <button id="moveDownButton" class="button">↓</button>
+      <button id="moveLeftButton" class="button">←</button>
+      <button id="moveRightButton" class="button">→</button>
+      <button id="shootButton" class="button">Shoot</button>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
